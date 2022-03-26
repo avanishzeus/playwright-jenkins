@@ -2,7 +2,7 @@ pipeline {
   agent { 
     docker { 
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
-      args  '-w /var/jenkins_home/workspace/test-pipeline -v E:\jenkins\workspace\test-pipeline:/var/jenkins_home/workspace/test-pipeline:rw,z'
+      args  '-w /var/jenkins_home/workspace/test-pipeline -v E:/jenkins/workspace/test-pipeline:/var/jenkins_home/workspace/test-pipeline:rw,z'
     } 
   }
   stages {

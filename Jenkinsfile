@@ -9,7 +9,7 @@ pipeline {
       steps {
         sh '''
           npm i
-          npx playwright intall
+          npx playwright install
         '''
       }
     }

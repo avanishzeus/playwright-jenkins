@@ -1,9 +1,7 @@
 pipeline {
   agent { 
-    docker { 
-      image 'mcr.microsoft.com/playwright:v1.17.2-focal'
-      args  '-w /var/jenkins_home/workspace/test-pipeline -v //e/jenkins/workspace/test-pipeline:/var/jenkins_home/workspace/test-pipeline:rw,z'
-    } 
+    node {
+      label jenkins-agent
   }
   stages {
     stage('install playwright') {

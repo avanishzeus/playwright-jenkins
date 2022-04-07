@@ -2,6 +2,7 @@ pipeline {
   agent { 
     node {
       label jenkins-agent
+    }
   }
   stages {
     stage('install playwright') {
